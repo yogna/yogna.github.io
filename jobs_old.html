@@ -1,0 +1,28 @@
+---
+title: Jobs
+layout: default
+bodyClass: page-jobs-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Jobs</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {% for job in site.jobs %}
+    <div class="col-12 col-md-6 mb-2">
+      <div class="jobs jobs-summary">
+        <h2 class="jobs-title">{{ job.title }}</h2>
+        <div class="jobs-content">{{ job.content }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

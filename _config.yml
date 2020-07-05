@@ -1,22 +1,24 @@
 baseurl: ''
 exclude: ['README.md']
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'Yogna Inc.'
 
 collections:
   services:
     output: true
     permalink: /services/:path/
-  team:
+  jobs:
     output: true
-    permalink: /team/:path/
-  testimonials:
-    output: true
-    permalink: /testimonials/:path/
+    permalink: /jobs/:path/
 
 defaults:
   - scope:
       type: services
+    values:
+      layout: service
+      bodyClass: page-services-single
+  - scope:
+      type: jobs
     values:
       layout: service
       bodyClass: page-services-single

@@ -1,0 +1,47 @@
+.jobs-summary {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  .jobs-image {
+    flex: 0;
+    margin-right: 10px;
+    img {
+      width: 160px;
+    }
+  }
+  .jobs-meta {
+    flex: 1;
+    margin-bottom: 10px;
+
+    p {
+      margin: 0;
+    }
+    a {
+    }
+  }
+  .jobs-title {
+    margin-bottom: 5px;
+  }
+  .jobs-name {
+    font-weight: bold;
+    display: inline-block;
+  }
+  .jobs-jobtitle {
+    display: inline-block;
+    color: $secondary;
+  }
+  .jobs-content {
+    flex: 1 0 100%;
+
+    blockquote {
+      display: block;
+      border-width: 2px 0 0 0;
+      border-style: solid;
+      border-color: #eee;
+      padding: 1.5em 0 0.5em;
+      margin: 1.5em 0;
+      position: relative;
+    }
+  }
+}
